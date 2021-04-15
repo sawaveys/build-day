@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color:rgba(117, 190, 218, 0.5);
+    font-family: 'Poppins', sans-serif;
+
+}
