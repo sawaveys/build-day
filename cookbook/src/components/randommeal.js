@@ -1,4 +1,5 @@
-import React, { Component, Link } from 'react';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 class RandomMeal extends Component{
@@ -28,7 +29,7 @@ class RandomMeal extends Component{
                     
                     <h1 style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>{this.state.Recipe.strMeal}</h1>
                     <h3>Cuisine: {this.state.Recipe.strArea}</h3>
-                    <img style={{display: 'flex',  justifyContent:'center', alignItems:'center', width: '20%'}} src={this.state.Recipe.strMealThumb} alt= ''/>
+                    <img src={this.state.Recipe.strMealThumb} alt= ''/>
                     <h3>Intructions:</h3> <p>{this.state.Recipe.strInstructions}</p>
                     
                     <ul>
@@ -65,7 +66,7 @@ class RandomMeal extends Component{
                     <li>{this.state.Recipe.strMeasure13}</li>
                     <li>{this.state.Recipe.strMeasure14}</li>
                     </ul>
-
+                    <button><Link to="/create">Next Page</Link></button>
                     <a href= {this.state.Recipe.strSource}>Source</a>
                     
                     </div>
